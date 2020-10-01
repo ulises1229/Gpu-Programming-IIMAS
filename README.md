@@ -41,7 +41,7 @@ Se deberán crear cuentas en las siguientes plataformas:
 | No.        | Tema           | Código  |  Material complementario|
 | :-------------: |:-------------|:-----| :-----:|
 | 1.              |Introducción a la programación con GPUs               |        |          | 
-| 2.              |Modelo de ejecución paralela                          |         |          | 
+| 2.              |Modelo de ejecución paralela                          | [vectorAdd.cu](code/vectorAdd.cu)        |          | 
 | 3.              |Jerarquía de memoria |         |          |   
 | 4.              |Transferencia asíncrona de datos                  |         |          |    
 | 5.              |Cooperación y sincronización de hilos               |         |          |    
