@@ -1,4 +1,5 @@
-# Licenciatura en Tecnología - Computación III 
+# Posgrado en Ciencia e Ingeniería de la Computación 
+## Introducción a la Programación Paralela con GPUs
 ###  Semestre: 2021-1
 ![alt text](figs/logo.png)
 
@@ -8,40 +9,44 @@
  Dr. Ulises Olivares Pinto
 
 ## Objetivo del curso
-Presentar al alumno métodos numéricos para resolver problemas matemáticos, físicos, químicos y biológicos
+Presentar al estudiante el modelo de programación paralela empleando Unidades de
+Procesamiento Gráfico (GPUs). Se utilizarán los GPUs como dispositivo de propósito
+general para la resolución de problemas inherentemente paralelos.
 
 
 ## Prerequisitos
 #### Deseables
-+ Dominio de los lenguajes de programación Python y C++ 
-+ Haber cursado y acreditato la asignatura de Computación II
++ Dominio de los lenguajes de programación C y C++ 
++ Conicimiento básico de estructuras de datos y algoritmos
+
+#### Hardware
+Se deberá contar con una computadora con GPU de la marca NVIDIA
+
 
 #### Software
 Se deberá contar con el siguiente software instalado 
 
-+ [Video de instalación de prerequisitos](https://www.youtube.com/watch?v=1ETiwXo0lg4&feature=emb_title&ab_channel=CanalTecn%C3%B3logos)
-  + Python 3.X
+  + [CUDA Toolkit] (https://developer.nvidia.com/cuda-toolkit)
   + Entonrno de desarrollo integrado(IDE)
-    - Jupyter [Página oficial](https://jupyter.org/) (Deseable)
-    - Pycharm [Licencia educativa](https://www.jetbrains.com/community/education/#students)
-    - Spyder [Página oficial](https://www.spyder-ide.org/)
-  + Instalación de librarías (Instalación local)
-    - Numpy
-    - Sympy
-    - Matplotlib 
+    - Eclipse
+    - Clion
+  + [NVIDIA NSIGHT](https://developer.nvidia.com/nsight-visual-studio-edition)
+    
 
 #### Cuentas
 Se deberán crear cuentas en las siguientes plataformas:
   + Crear una cuenta en GitHub
-  + Crear una cuente en Google Colab
   
 ## Contenido del curso
 | No.        | Tema           | Código  |  Material complementario|
 | :-------------: |:-------------|:-----| :-----:|
-| 1.              |Optimización en una dimensión               |  [Optimización.ipynb](https://colab.research.google.com/drive/1qY2PTx2BsP0YOIWbRoRnZz6g24a8By8S?usp=sharing)       |          | 
-| 2.              |Análisis Matricial                          |         |          | 
-| 3.              |Sistemas de ecuaciones algebraicas lineales |         |          |   
-| 4.              |Problemas de eigenvalores                   |         |          |    
-| 5.              |Optimización en una dimensión               |         |          |    
+| 1.              |Introducción a la programación con GPUs               |        |          | 
+| 2.              |Modelo de ejecución paralela                          |         |          | 
+| 3.              |Jerarquía de memoria |         |          |   
+| 4.              |Transferencia asíncrona de datos                  |         |          |    
+| 5.              |Cooperación y sincronización de hilos               |         |          |    
+| 6.              |Operaciones atómicas               |         |          |    
+| 7.              |Optimización y rendimiento               |         |          |    
+| 8.              |Aplicaciones               |         |          |    
 
 ##### Última actualización: 23 de septiembre de 2020
