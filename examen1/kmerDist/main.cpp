@@ -15,7 +15,7 @@ vector<string> seqs;
 
 int main(int argc, char **argv) {
     // absolute path of the input data
-    string file = "/Users/ulisesolivares2/CLionProjects/examenGPUs/plant.fasta";
+    string file = "/Users/ulisesolivares2/Documents/GitHub/Gpu-Programming-IIMAS/examen1/kmerDist/all_seqs.fasta";
     importSeqs(file);
     printSeqs();
     return 0;
@@ -29,31 +29,40 @@ void importSeqs(string inputFile){
     }
 
     string line;
-    // Don't loop on good(), it doesn't allow for EOF!!
 
+    bool newSeq = false;
     // Iterate over all secuences
     while (getline(input, line)) {
 
         // line may be empty so you *must* ignore blank lines
         // or you have a crash waiting to happen with line[0]
-        if(line.empty())
+        if(line.empty()){
             continue;
+        }
 
         //read the header of
         if (line[0] == '>') {
             // store id
             ids.push_back(line);
-
+            newSeq = true;
         }
         else {
+            if (newSeq) {
+                seqs.push_back(line);
+                newSeq = false;
+            }
+            else
+                line += line;
             // store seqs
-            seqs.push_back(line);
+
         }
     }
 }
 
 void printSeqs(){
+    cout<< "total number of seqs: " << seqs.size() << endl;
+
     for (int i = 0; i<seqs.size(); i++){
-        cout << ids[i] << "\n" <<  seqs[i] << endl;
+        cout << ">" <<  seqs[i] << endl;
     }
 }
