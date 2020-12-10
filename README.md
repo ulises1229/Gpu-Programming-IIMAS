@@ -45,8 +45,6 @@ Se deberán crear cuentas en las siguientes plataformas:
 | 3.              |Jerarquía de memoria  |  Memoria global, memoria compartida, registros, caches, sincronización de hilos y latencias   |    |  [Capítulo 4](https://www.iaa.csic.es/~dani/ebooks/MK.Programming.Massively.Parallel.Processors.2nd.Edition.Dec.2012.pdf)        |   
 | 4.              |Patrones de acceso de memoria: (Convolución)      |   Memoria constante, memoria global, memoria compartida, convoluciones        | <ul> <li>[convolution_global.cu](code/convolution.cu)</li> <li>[convolution_tiled.cu](code/convolution_tiled.cu)</li></ul>       | [Capítulos 5 - 7](https://www.iaa.csic.es/~dani/ebooks/MK.Programming.Massively.Parallel.Processors.2nd.Edition.Dec.2012.pdf)         |    
 | 5.              |Patronesd de acceso: Merge Sort     |   Memoria compartida, buffer, algoritmo de ordenamiento     |   <ul><li>[merge.cu](code/merge.cu)</li></ul>     |      [Capítulo 11](https://www.iaa.csic.es/~dani/ebooks/MK.Programming.Massively.Parallel.Processors.2nd.Edition.Dec.2012.pdf)     |    
-| 6.              |Operaciones atómicas     |          |         |          |    
-| 7.              |Optimización y rendimiento     |          |         |          |    
-| 8.              |Aplicaciones     |          |         |          |    
+| 6.              |Memoria unificada     | Inicialización en host y device, prefetching          |  <ul><li>[unifiedMem.cu](code/unifiedMem.cu)</li></ul>        |          |    
 
-##### Última actualización: 05 de noviembre de 2020
+##### Última actualización: 10 de diciembre de 2020
